@@ -30,17 +30,20 @@ function App() {
   return (
     <div className="App">
       <h1>Weather App</h1>
-      <input
-        type="text"
-        placeholder="Enter city"
-        value={city}
-        onChange={(e) => setCity(e.target.value)}
-      />
-      <button onClick={getWeather} disabled={loading}>
-        {loading ? 'Loading...' : 'Get Weather'}
-      </button>
 
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+      <div className="input-group">
+        <input
+          type="text"
+          placeholder="Enter city"
+          value={city}
+          onChange={(e) => setCity(e.target.value)}
+        />
+        <button onClick={getWeather} disabled={loading}>
+          {loading ? 'Loading...' : 'Get Weather'}
+        </button>
+      </div>
+
+      {error && <p className="error-message">{error}</p>}
 
       {weather && (
         <div className="weather-info">
