@@ -32,7 +32,7 @@ Node.js (which includes npm)
 Installation
 Clone the repository:
 
-git clone https://github.com/your-username/react-weather-app.git
+git clone https://github.com/Abhiramsankranthi/weatherapp
 
 Navigate to the project directory:
 
